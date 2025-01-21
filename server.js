@@ -9,11 +9,7 @@ const Posts = require("./models/Posts.js");
 
 // Middleware
 app.use(express.json());
-app.use(cors(
-  {
-    origin: 'https://hdmovieshub.art'
-  }
-));
+app.use(cors());
 
 // Validate environment variables
 if (!process.env.MONGO_URI) {
